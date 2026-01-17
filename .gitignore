@@ -1,24 +1,60 @@
-# Compiled class file
+Aquí tienes un `.gitignore` actualizado para un proyecto **Java + Maven + Spring Boot** usando **IntelliJ IDEA**:
+
+```gitignore
+### Java ###
 *.class
-
-# Log file
 *.log
+hs_err_pid*
+replay_pid*
 
-# BlueJ files
-*.ctxt
+### Maven ###
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+**/dependency-reduced-pom.xml
+build.log
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
+### Spring ###
+# Archivos generados por Spring Boot
 *.jar
 *.war
-*.nar
-*.ear
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Cache de IntelliJ
+.idea_modules/
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/shelf/
+
+### Sistema operativo ###
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+### Archivos temporales ###
+*.tmp
+*.swp
+*.swo
+
+### Tools y empaquetados ###
 *.zip
 *.tar.gz
 *.rar
+*.ear
+*.nar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+### J2ME (por si acaso)
+.mtj.tmp/
+```
+
+
