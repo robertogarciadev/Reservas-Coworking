@@ -11,8 +11,10 @@
 	<groupId>com.booking</groupId>
 	<artifactId>booking-coworking</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Booking-Coworking</name>
+    <packaging>pom</packaging>
+    <name>Booking-Coworking</name>
 	<description>Gestion booking Coworking</description>
+
 	<url/>
 	<licenses>
 		<license/>
@@ -20,7 +22,10 @@
 	<developers>
 		<developer/>
 	</developers>
-	<scm>
+    <modules>
+        <module>booking</module>
+    </modules>
+    <scm>
 		<connection/>
 		<developerConnection/>
 		<tag/>
@@ -33,6 +38,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
